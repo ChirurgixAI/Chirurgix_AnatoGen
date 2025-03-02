@@ -123,8 +123,6 @@ def add_applicator_to_lines(lines, another_mesh, ):
     return another_mesh, rot_matrix, translation_matrix
 
 
-
-
 def read_ct(path):
     """Read CT files and structure data"""
     dcms = glob.glob(os.path.join(path, '*.dcm'))
