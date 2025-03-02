@@ -276,8 +276,6 @@ def image_to_point_cloud(image, z_scale, centroids_ratio=10000000):
     non_zero_points = np.column_stack((x, y, z * z_scale))
     print('image_to_point_cloud finished')
     
-    
-    
     # cal_num_centroids
     num_centroids = int(len(non_zero_points) // (centroids_ratio * z_scale))+1
         
