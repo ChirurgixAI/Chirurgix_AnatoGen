@@ -28,10 +28,6 @@ Our framework is built on cutting-edge research in medical AI, incorporating:
 - Sophisticated anatomical modeling algorithms
 - Robust validation protocols based on clinical standards
 
-**Chirurgix-AnatoGen** is an AI-driven computational framework designed for **patient-specific medical implant synthesis** through **Deep Anatomical Reconstruction** and **Automated Radiation Therapy Planning**. Initially developed for **cervical cancer**, Chirurgix-AnatoGen integrates **AI-powered medical imaging, robotic-assisted therapy, and precision medicine** to enhance oncology treatment planning and execution.
-
-Built on a dataset of **10,000+ clinical cases**, Chirurgix-AnatoGen leverages **unsupervised learning** to optimize radiation source placement, ensuring **higher treatment accuracy while minimizing surgical complexity and organ damage**. Future expansions will include **thoracic oncology, AI-optimized brachytherapy, and nanomedicine-based targeted drug delivery**.
-
 > 🚀 *Transforming AI-driven oncology from research to clinical reality—one patient-specific solution at a time.*
 
 ---
