@@ -12,6 +12,22 @@
 
 ## ✨ Overview
 
+**Chirurgix-AnatoGen** is an innovative AI-driven computational framework at the intersection of medical imaging, deep learning, and precision oncology. Our framework is designed to revolutionize patient-specific medical implant synthesis through advanced Deep Anatomical Reconstruction techniques.
+
+### Current Development Status
+We are progressively open-sourcing components of our technology stack, following a carefully planned roadmap to ensure quality and stability. Currently available components include:
+
+- **Core AI Imaging Pipeline**: Foundational algorithms for medical image processing and anatomical feature extraction
+- **Basic Reconstruction Module**: Initial implementation of our 3D reconstruction system for CT scan processing
+- **Development API**: Beta version of our Python-based API for medical image analysis
+
+*Note: Additional components are under active development and will be released according to our roadmap.*
+
+Our framework is built on cutting-edge research in medical AI, incorporating:
+- Advanced deep learning architectures optimized for medical imaging
+- Sophisticated anatomical modeling algorithms
+- Robust validation protocols based on clinical standards
+
 **Chirurgix-AnatoGen** is an AI-driven computational framework designed for **patient-specific medical implant synthesis** through **Deep Anatomical Reconstruction** and **Automated Radiation Therapy Planning**. Initially developed for **cervical cancer**, Chirurgix-AnatoGen integrates **AI-powered medical imaging, robotic-assisted therapy, and precision medicine** to enhance oncology treatment planning and execution.
 
 Built on a dataset of **10,000+ clinical cases**, Chirurgix-AnatoGen leverages **unsupervised learning** to optimize radiation source placement, ensuring **higher treatment accuracy while minimizing surgical complexity and organ damage**. Future expansions will include **thoracic oncology, AI-optimized brachytherapy, and nanomedicine-based targeted drug delivery**.
@@ -109,15 +125,96 @@ Components:
 - **Python** (3.9+)  
 - **Numpy** (1.0.3+)  
 - **scikit-learn** (1.5.1+)  
-- **torch** （2.1.1）  
-- **pydicom**  （2.4.0）  
+- **torch** (2.1.1)  
+- **pydicom** (2.4.0)  
 - **open3d** (0.17.0)  
 - **cv2** (4.7.0)  
 - **OpenCASCADE** (0.0.12)  
 
+### Installation Steps
+
+1. **Environment Setup**
+   ```bash
+   # Create and activate a virtual environment
+   python -m venv chirurgix-env
+   source chirurgix-env/bin/activate  # On Unix/macOS
+   # or
+   .\chirurgix-env\Scripts\activate  # On Windows
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Configure Development Environment**
+   ```bash
+   # Clone the repository
+   git clone https://github.com/ChirurgixAI/Chirurgix_AnatoGen.git
+   cd Chirurgix_AnatoGen
+
+   # Install additional development dependencies
+   pip install -e ".[dev]"
+   ```
+
+4. **Verify Installation**
+   ```bash
+   python -c "import chirurgix; print(chirurgix.__version__)"
+   ```
+
+### Initial Configuration
+
+1. **Data Directory Setup**
+   ```bash
+   mkdir -p data/{raw,processed,models}
+   ```
+
+2. **Environment Configuration**
+   - Create a `.env` file in the project root
+   - Copy `.env.example` to `.env` and fill in required values
+
+3. **Model Initialization**
+   ```bash
+   python scripts/initialize_models.py
+   ```
+
+### Development Setup
+
+For contributors and developers:
+
+1. **Install Development Tools**
+   ```bash
+   pip install -r requirements-dev.txt
+   ```
+
+2. **Setup Pre-commit Hooks**
+   ```bash
+   pre-commit install
+   ```
+
+3. **Configure IDE**
+   - Recommended: VSCode with Python and Jupyter extensions
+   - Use provided `.vscode/settings.json` for consistent formatting
+
+### Troubleshooting
+
+Common installation issues and solutions:
+
+1. **OpenCASCADE Installation**
+   - On Linux: `sudo apt-get install libocct-*`
+   - On macOS: `brew install opencascade`
+   - On Windows: Use provided binary installers
+
+2. **CUDA Setup (Optional)**
+   - Verify CUDA installation: `nvidia-smi`
+   - Install CUDA toolkit if needed
+   - Set environment variables as needed
+
+For detailed troubleshooting, please refer to our [documentation](docs/troubleshooting.md).
+
 ---
 
-## 📞 Contact
+## �� Contact
 
 - Twitter: [Chirurgix](https://x.com/Chirurgix)  
 - GitHub: [Chirurgix](https://github.com/ChirurgixAI/Chirurgix_AnatoGen) 
