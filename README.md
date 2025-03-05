@@ -210,7 +210,7 @@ Common installation issues and solutions:
    - Install CUDA toolkit if needed
    - Set environment variables as needed
 
-For detailed troubleshooting, please refer to our [documentation](docs/troubleshooting.md).
+For detailed troubleshooting, please make an Issue.
 
 ---
 
