@@ -214,7 +214,7 @@ For detailed troubleshooting, please refer to our [documentation](docs/troublesh
 
 ---
 
-## �� Contact
+## 📞 Contact
 
 - Twitter: [Chirurgix](https://x.com/Chirurgix)  
 - GitHub: [Chirurgix](https://github.com/ChirurgixAI/Chirurgix_AnatoGen) 
